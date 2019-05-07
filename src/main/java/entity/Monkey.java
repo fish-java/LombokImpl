@@ -7,11 +7,11 @@ import lombok.Setter;
 
 import java.util.Date;
 
-@Getter @Setter
-@NoArgsConstructor
-@AllArgsConstructor
+@Getter @Setter // 为所有属性生成公有的getter setter方法
+@NoArgsConstructor // 生成公有无参构造函数
+@AllArgsConstructor // 生成全参构造函数
 public class Monkey {
-    private Integer id;
-    private String name;
+    public String name;
+    protected Integer id;
     private Date birthday;
 }
